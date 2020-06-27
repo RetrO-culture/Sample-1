@@ -1,0 +1,32 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" type="text/css" href="design.css">
+</head>
+<title>
+Sample 1
+</title>
+<body onload="retro()">
+<div class="heading">
+<h1>
+Thanks for clicking
+</h1>
+</div>
+<div style="display:none;" id="wait">
+<img src="anim/proj 7_3.gif" alt="Animation" style="width:500px;height:500px;" class="alignment">
+</div>
+<div id="spinani"></div>
+<footer>
+<p>Team Blue for life</p>
+</footer>
+<script>
+var myVar;
+function retro() {
+myVar = setTimeout(showPage, 1500);
+}
+function showPage() {
+document.getElementById("spinani").style.display = "none";
+document.getElementById("wait").style.display = "block";
+}
+</script>
+</body>
+</html>
